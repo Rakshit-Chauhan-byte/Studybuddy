@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+/* ── Base overrides ────────────────────────── */
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* ── Select/option dark theme fix ──────────── */
+select option {
+  background: #111827;
+  color: #fff;
+}
+
+/* ── Date input icon fix for dark mode ─────── */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.7);
+}
